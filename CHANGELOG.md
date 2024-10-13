@@ -1,5 +1,11 @@
 
 
+## [1.4.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.3.0...v1.4.0) (2024-10-13)
+
+### Features
+
+* add OpenGraph image and base url ([ee6991c](https://github.com/berlinbruno/nextjs-starter/commit/ee6991c8a659651ef04465673c48ec905c0eb02e))
+
 ## [1.3.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.2.0...v1.3.0) (2024-10-13)
 
 ### Features
