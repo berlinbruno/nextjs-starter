@@ -61,5 +61,18 @@
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "main": "bin/cli.js",
+  "bin": {
+    "nextjs-starter": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berlinbruno/nextjs-starter.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/berlinbruno/nextjs-starter/issues"
+  },
+  "homepage": "https://github.com/berlinbruno/nextjs-starter#readme"
 }
