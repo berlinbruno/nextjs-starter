@@ -7,12 +7,17 @@
   "keywords": [
     "nextjs",
     "react",
-    "web-development",
-    "template",
-    "starter"
+    "starter",
+    "typescript",
+    "tailwindcss",
+    "eslint",
+    "husky",
+    "prettier",
+    "commitlint",
+    "commitizen"
   ],
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start -p 4000",
     "preview": "next build && next start -p 4000",
