@@ -8,18 +8,18 @@ const repoName = process.argv[2] || './';
 const gitCheckoutCommand = `git clone https://github.com/berlinbruno/nextjs-starter.git ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install -D rimraf && npm install`;
 
-// Function to update the "name" field in package.json
-function updateNameInPackageJson(newName) {
-  if (newName == './') {
-    newName = 'nextjs-starter'; // Default name if no argument is provided
+// Function to update the fields in package.json
+function updatePackageJson(name, author, description) {
+  if (name === './') {
+    name = 'nextjs-starter'; // Default name if no argument is provided
   }
   const packageJsonPath = path.join(repoName, 'package.json');
   const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
 
-  packageJson.name = newName; // Update the name field
+  packageJson.name = name; // Update the name field
   packageJson.version = '0.1.0'; // Set default version
-  packageJson.author = 'your name'; // Prompt for author
-  packageJson.description = 'your description'; // Prompt for description
+  packageJson.author = author; // Set the author
+  packageJson.description = description; // Set the description
 
   fs.writeFileSync(
     packageJsonPath,
@@ -28,12 +28,11 @@ function updateNameInPackageJson(newName) {
   );
 }
 
-// Function to remove fields from package.json
 function removeFieldFromPackageJson(field) {
   const packageJsonPath = path.join(repoName, 'package.json');
   const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
 
-  delete packageJson[field]; // Remove specified field
+  delete packageJson[field];
 
   fs.writeFileSync(
     packageJsonPath,
@@ -42,7 +41,6 @@ function removeFieldFromPackageJson(field) {
   );
 }
 
-// Create an array of fields to remove from package.json
 const fieldsToRemove = [
   'publishConfig',
   'repository',
@@ -59,65 +57,67 @@ function runCommand(command) {
     execSync(command, { stdio: 'inherit' });
     return true;
   } catch (error) {
-    console.error(`Error executing command: ${command}`, error);
+    console.error(`🛑 Error executing command: ${command}`, error);
     return false;
   }
 }
 
-console.log(`Initializing project '${repoName}' ✨`);
+console.log(`\nInitializing project '${repoName}' ✨`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) {
-  console.error('Failed to clone the repository. Exiting...');
+  console.error('🛑 Failed to clone the repository. Exiting...');
   process.exit(-1);
 }
 
-console.log('Installing dependencies...🔥');
+console.log('\nInstalling dependencies... 🔥');
 const installDeps = runCommand(installDepsCommand);
 if (!installDeps) {
-  console.error('Failed to install dependencies. Exiting...');
+  console.error('🛑 Failed to install dependencies. Exiting...');
   process.exit(-1);
 }
 
-// Update the "name" field in package.json
-console.log(`Updating name in package.json to: ${repoName}...`);
-updateNameInPackageJson(repoName);
+console.log(`\nUpdating name in package.json to: ${repoName}...`);
+updatePackageJson(
+  repoName,
+  'Your Name',
+  'A starter template for Next.js projects.'
+); // Update author and description
 
-// Remove the specified fields from package.json
 fieldsToRemove.forEach((field) => {
-  console.log(`Removing field: '${field}' from package.json...`);
+  console.log(`\n🗑️ Removing field: ${field} from package.json...`);
   removeFieldFromPackageJson(field);
 });
 
-// Cleaning up unnecessary files
-console.log('Cleaning up unnecessary files...🔥');
+console.log('\nCleaning up unnecessary files... 🔥');
 const cleaningFilesCommand = `npx rimraf ${repoName}/bin ${repoName}/.github/workflows/publish.yml ${repoName}/.release-it.json ${repoName}/CHANGELOG.md ${repoName}/.git ${repoName}/LICENSE`;
 
-// Log the command for debugging purposes
-console.log(`Executing cleanup command`);
-
-// Run the cleaning command and check for success
+console.log(`\nExecuting cleanup command...`);
 if (!runCommand(cleaningFilesCommand)) {
-  console.error('Failed to clean up unnecessary files. Exiting...');
+  console.error('🛑 Failed to clean up unnecessary files. Exiting...');
   process.exit(-1);
 }
 
-console.log('Uninstalling development dependencies...🔥');
+console.log('\nUninstalling development dependencies... 🔥');
 const unInstallDepsCommand = `cd ${repoName} && npm uninstall rimraf --save-dev`;
 if (!runCommand(unInstallDepsCommand)) {
-  console.error('Failed to uninstall development dependencies. Exiting...');
+  console.error('🛑 Failed to uninstall development dependencies. Exiting...');
   process.exit(-1);
 }
 
-console.log('Project setup complete! 🎉');
+console.log('🎉 Project setup complete!');
 
-// Provide additional instructions
-console.log('SaxX! You are ready. Follow the following commands to start 🚀');
-console.log('');
-console.log(`Make sure you follow the steps below to start fresh:`);
+console.log('🚀 You are ready to go! Follow the steps below to get started:');
 console.log(
-  `- Rename the 'name', 'author', and 'description' fields in package.json to reflect your project.`
+  `\n- Rename the 'name', 'author', and 'description' fields in package.json to reflect your project.`
 );
-console.log(`- Change the title and description in "layout.tsx" for your app.`);
+console.log(`- Update the site metadata in "constants/data.ts" for your app.`);
 console.log(
-  `- Clean up the "README.md" file to provide relevant information about your project.`
+  `- Create environment variables for dev (port: 3000) and prod (port: 4000) with "NEXT_PUBLIC_BASE_URL" for your app.`
 );
+console.log(`- Update the name in the LICENSE file.`);
+console.log(
+  `- Clean up the "README.md" file to provide relevant information about your project.\n`
+);
+console.log(`- Explore the project.\n`);
+
+console.log('✨ Happy coding! ✨');
