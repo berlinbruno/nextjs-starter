@@ -16,6 +16,7 @@ const siteData = {
   OPENGRAPH: '/images/opengraph/opengraph.jpeg',
   BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || '',
   LANG: 'en-US',
+  DEFAULT_THEME: 'system',
   THEME_COLOR: '#FFFFFF',
   THEME_COLOR_LIGHT: '#FFFFFF',
   THEME_COLOR_DARK: '#FFFFFF',

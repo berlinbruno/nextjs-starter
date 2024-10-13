@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/providers/theme-provider';
 import siteData from '@/constants/data';
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
@@ -118,7 +119,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme={siteData.DEFAULT_THEME}
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
