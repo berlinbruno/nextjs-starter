@@ -28,6 +28,8 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        muted: '#f5f5f5',
+        'muted-foreground': '#6b7280', // Wrap the key in quotes
       },
     },
   },

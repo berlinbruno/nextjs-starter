@@ -70,10 +70,10 @@ export default function manifest(): CustomManifest {
     ],
     shortcuts: [
       {
-        name: 'Home Page',
-        short_name: 'Home',
+        name: 'Documentation',
+        short_name: 'Docs',
         description: 'Welcome to Next.js Starter',
-        url: '/',
+        url: '/docs',
         icons: [
           {
             src: '/images/icons/welcome.png',
