@@ -30,6 +30,11 @@ yarn-error.log*
 .env*.development
 .env*.production
 
+# pwa
+/public/sw.js
+/public/fallback*.js
+/public/workbox*.js
+
 # vercel
 .vercel
 
