@@ -1,13 +1,41 @@
 {
-  "name": "nextjs-starter",
+  "name": "@berlinbruno/nextjs-starter",
   "version": "0.1.0",
   "private": true,
+  "description": "A starter template for Next.js projects, optimized for performance and best practices.",
+  "author": "berlinbruno",
+  "keywords": [
+    "nextjs",
+    "react",
+    "web-development",
+    "template",
+    "starter"
+  ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "start": "next start -p 4000",
+    "preview": "next build && next start -p 4000",
+    "lint": "eslint src --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext js,jsx,ts,tsx --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,html}'",
+    "commit": "git cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "next": "14.2.15",

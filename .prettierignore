@@ -1,0 +1,20 @@
+# Ignore build artifacts
+.next/
+dist/
+build/
+
+# Ignore node modules
+node_modules/
+
+# Ignore package lock
+package-lock.json
+
+# Ignore minified JS files
+*.min.js
+
+# Ignore specific file types
+*.log
+*.env
+
+# Ignore public directory
+public/
