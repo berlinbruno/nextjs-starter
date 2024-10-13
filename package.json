@@ -1,7 +1,7 @@
 {
   "name": "@berlinbruno/nextjs-starter",
   "version": "1.1.0",
-  "private": true,
+  "private": false,
   "description": "A starter template for Next.js projects, optimized for performance and best practices.",
   "author": "berlinbruno",
   "keywords": [
