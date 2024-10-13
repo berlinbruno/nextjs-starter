@@ -1,5 +1,18 @@
 
 
+## [1.3.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.2.0...v1.3.0) (2024-10-13)
+
+### Features
+
+* add theme provider and system theme support ([fa0c4a0](https://github.com/berlinbruno/nextjs-starter/commit/fa0c4a0caa21ca93448a627ac0ff2e7beedfd2ed))
+* enhance styling and add offline page ([1d1f57d](https://github.com/berlinbruno/nextjs-starter/commit/1d1f57ddb7c614ef75227cc6da6c404a8e50a288))
+
+### Miscellaneous
+
+* update globals.css ([6e5dcc3](https://github.com/berlinbruno/nextjs-starter/commit/6e5dcc3e935bdf583c70e47e823961592fa10950))
+* update project dependencies and configurations ([62f46ac](https://github.com/berlinbruno/nextjs-starter/commit/62f46ac3a8494be60018f87f49ae7b02869d74fa))
+* update project setup and dependencies ([8f25653](https://github.com/berlinbruno/nextjs-starter/commit/8f256537d9ac8b073a5e10568073ec48e43792db))
+
 ## [1.2.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.1.0...v1.2.0) (2024-10-13)
 
 ### Features
