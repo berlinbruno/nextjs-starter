@@ -14,7 +14,11 @@ const siteData = {
   KEYWORDS: ['nextjs'],
   CATEGORIES: [''],
   OPENGRAPH: '/images/opengraph/opengraph.jpeg',
-  BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || '',
+  BASE_URL:
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    (process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000'
+      : 'http://localhost:4000'),
   LANG: 'en-US',
   DEFAULT_THEME: 'system',
   THEME_COLOR: '#FFFFFF',
