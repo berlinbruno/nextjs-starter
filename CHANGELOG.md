@@ -1,5 +1,11 @@
 
 
+## [1.2.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.1.0...v1.2.0) (2024-10-13)
+
+### Features
+
+* publish package to npm ([de1a461](https://github.com/berlinbruno/nextjs-starter/commit/de1a4618d29368e0cfe1ea866939331c3bbb8919))
+
 ## 1.1.0 (2024-10-13)
 
 ### Features
