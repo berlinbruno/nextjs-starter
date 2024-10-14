@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+import { genPageMetadata } from '../seo';
+
+export const metadata: Metadata = genPageMetadata({
+  title: 'Offline',
+  description: 'No Network',
+});
+
 export default function OfflinePage() {
   return (
     <main className="container mx-auto min-h-screen">

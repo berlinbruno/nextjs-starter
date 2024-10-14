@@ -1,4 +1,13 @@
 import ModeToggle from '@/components/ui/mode-toggle';
+import { Metadata } from 'next';
+import { genPageMetadata } from '../seo';
+
+export const metadata: Metadata = genPageMetadata({
+  title: `Building Your Starter App with Next.js 🛠️`,
+  description: `🌟 Follow these steps to create and set up your new Next.js starter
+          app, complete with essential tools for a smooth development
+          experience. 🔧`,
+});
 
 export default function CreationPage() {
   return (
@@ -12,10 +21,12 @@ export default function CreationPage() {
         <h1 className="h1 text-center">
           Building Your Starter App with Next.js 🛠️
         </h1>
-        <p className="p mb-2 text-center">
-          Follow these steps to create and set up your new Next.js starter app,
-          complete with essential tools for a smooth development experience.
+        <p>
+          🌟 Follow these steps to create and set up your new Next.js starter
+          app, complete with essential tools for a smooth development
+          experience. 🔧
         </p>
+
         <section>
           <h2 className="h2 mb-6 text-center">Steps to Setup</h2>
 

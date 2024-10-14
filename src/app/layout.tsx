@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     description: siteData.DESCRIPTION,
     url: './',
     siteName: siteData.TITLE,
-    images: [],
-    locale: 'en-us',
+    images: [siteData.OPENGRAPH],
+    locale: siteData.LANG,
     type: 'website',
   },
   robots: {
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     title: siteData.TITLE,
     card: 'summary_large_image',
-    images: [],
+    images: [siteData.OPENGRAPH],
   },
   alternates: {
     canonical: './',
@@ -81,7 +81,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={siteData.LANG} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <link
         rel="icon"
         type="image/png"

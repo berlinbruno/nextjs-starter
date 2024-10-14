@@ -1,4 +1,12 @@
 import ModeToggle from '@/components/ui/mode-toggle';
+import { Metadata } from 'next';
+import { genPageMetadata } from '../seo';
+
+export const metadata: Metadata = genPageMetadata({
+  title: 'How to Use the Template',
+  description: `This guide will help you understand how to effectively use the Next.js
+          template for your project. Let&apos;s get started! 🎉`,
+});
 
 export default function UsagePage() {
   return (

@@ -11,9 +11,6 @@ export default function Home() {
       </header>
       <main className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
         <h1 className="h1 text-center">Next.js Starter Template ⚡</h1>
-        {/* <div className="overflow-hidden rounded-full border border-border">
-          <code className="code">npx @berlinbruno/nextjs-starter</code>
-        </div> */}
         <CodeToClipboard />
         <ol className="list-inside list-decimal space-y-2 text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
           <li>
