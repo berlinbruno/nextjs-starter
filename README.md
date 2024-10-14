@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Starter
 
-## Getting Started
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@berlinbruno/nextjs-starter.svg)](https://www.npmjs.com/package/@berlinbruno/nextjs-starter)
+[![GitHub issues](https://img.shields.io/github/issues/berlinbruno/nextjs-starter.svg)](https://github.com/berlinbruno/nextjs-starter/issues)
+[![GitHub stars](https://img.shields.io/github/stars/berlinbruno/nextjs-starter.svg)](https://github.com/berlinbruno/nextjs-starter/stargazers)
 
-First, run the development server:
+A powerful starter template for building modern web applications using **Next.js**, **React**, and **TypeScript**. This template incorporates essential features for efficient development and optimal performance.
+
+## 🌟 Features
+
+- **Next.js**: 🌐 Server-side rendering and static site generation capabilities.
+- **React**: ⚛️ Build interactive user interfaces with a component-based approach.
+- **TypeScript**: 🛡️ Strongly typed language for improved developer experience.
+- **Progressive Web App (PWA)**: ⚡ Enhanced performance and offline capabilities.
+- **Tailwind CSS**: 🎨 Utility-first CSS framework for rapid UI development.
+- **Husky**: 🐶 Git hooks for enforcing quality checks before commits.
+- **Prettier & ESLint**: ✨ Automated code formatting and linting for consistent code quality.
+- **Commentlint**: 💬 Maintain consistent comment styles throughout your codebase.
+- **Continuous Integration**: 🔄 Seamless integration with CI/CD workflows.
+- **Next Themes**: 🎭 Easy theming for customizable user experiences.
+- **SEO Features**: 📈 Built-in support for optimizing web visibility.
+
+## 🌐 Live Demo
+
+Check out the live demo of this starter template: [Live Demo](https://www.nextjs-starter.berlinbruno.dev)
+
+## 📦 Installation
+
+To create a new Next.js app using this starter template, run the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx @berlinbruno/nextjs-starter my-app
+
 ```
+## ⚙️ Usage 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Customize the template according to your project requirements. Key areas to modify include:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **`package.json`**: Update the `author`, `description`, and `name`.
+- **`constants/data.ts`**: Change any static data or constants.
+- **SEO Setup**: Use the `generateSiteMetadata` function from `seo.ts` to manage SEO metadata.
+- **Images and Favicon**: Replace the favicon and images in the `public` folder.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+Contributions are welcome! Feel free to submit issues or pull requests to help improve the template.
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
