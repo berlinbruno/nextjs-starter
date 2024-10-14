@@ -2,19 +2,22 @@ import ModeToggle from '@/components/ui/mode-toggle';
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 bg-slate-200 p-8 pb-20 font-[family-name:var(--font-geist-sans)] dark:bg-black sm:p-20">
-      <main className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
+    <main className="grid min-h-screen grid-rows-[20px_1fr] items-center justify-items-center gap-16 bg-slate-200 p-8 pb-5 font-[family-name:var(--font-geist-sans)] dark:bg-black sm:p-20">
+      <div className="row-start-1 flex w-full justify-center">
+        <nav>
+          <ModeToggle />
+        </nav>
+      </div>
+      <div className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
         <h1 className="h1 text-center text-2xl font-bold sm:text-4xl">
           Next.js Starter Template
         </h1>
         <div className="overflow-hidden rounded-full border border-border">
-          <code className="bg-slate-100 p-2 font-mono text-slate-800 dark:bg-slate-800 dark:text-slate-200">
-            npx @berlinbruno/nextjs-starter
-          </code>
+          <code className="code">npx @berlinbruno/nextjs-starter</code>
         </div>
         <ol className="list-inside list-decimal space-y-2 text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
           <li>
-            Get started by editing{' '}
+            Get started by editing
             <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
               src/app/page.tsx
             </code>
@@ -29,6 +32,9 @@ export default function Home() {
             app.
           </li>
           <li>
+            Use &apos;seo.ts - genPageMetadata&apos; function for page metadata.
+          </li>
+          <li>
             Create environment variables for dev (port: 3000) and prod (port:
             4000) with <code>NEXT_PUBLIC_BASE_URL</code> for your app.
           </li>
@@ -41,27 +47,45 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+        <section className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-purple-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-purple-700 dark:bg-purple-800 dark:hover:bg-purple-900 sm:h-12 sm:px-5 sm:text-base"
+            href="/creation"
+            target="_self"
+            rel="noopener noreferrer"
+          >
+            🛠️ How the Template was Created
+          </a>
+
           <a
             className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-blue-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 sm:h-12 sm:px-5 sm:text-base"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Deploy now to Vercel
+            🚀 Deploy now to Vercel
           </a>
-          <ModeToggle />
+
           <a
             className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-green-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-800 dark:hover:bg-green-900 sm:h-12 sm:px-5 sm:text-base"
             href="https://app.netlify.com/start"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Deploy now to Netlify
+            🌐 Deploy now to Netlify
           </a>
-        </div>
 
-        <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-yellow-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-yellow-700 dark:bg-yellow-800 dark:hover:bg-yellow-900 sm:h-12 sm:px-5 sm:text-base"
+            href="/usage"
+            target="_self"
+            rel="noopener noreferrer"
+          >
+            📚 How to Use the Template
+          </a>
+        </section>
+
+        <section className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
               title: 'Next.js',
@@ -130,22 +154,17 @@ export default function Home() {
               description={card.description}
             />
           ))}
-        </div>
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center p-4">
-        <p className="text-center text-sm"> &copy; Berlin Bruno</p>
-      </footer>
-    </div>
+        </section>
+      </div>
+    </main>
   );
 }
 
 function Card({ title, description }: { title: string; description: string }) {
   return (
-    <div className="cursor-pointer overflow-hidden rounded-xl border border-border bg-background p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-gray-50 hover:shadow-lg dark:hover:bg-gray-800">
-      <h2 className="h4 line-clamp-1 text-lg font-semibold">{title}</h2>
-      <p className="p line-clamp-3 text-sm text-gray-700 dark:text-gray-300">
-        {description}
-      </p>
+    <div className="cursor-pointer overflow-hidden rounded-xl border border-border bg-background p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-muted hover:shadow-lg">
+      <h4 className="h4 line-clamp-1">{title}</h4>
+      <p className="p line-clamp-3">{description}</p>
     </div>
   );
 }
