@@ -2,17 +2,17 @@ import ModeToggle from '@/components/ui/mode-toggle';
 
 export default function CreationPage() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 bg-slate-200 p-8 font-[family-name:var(--font-geist-sans)] dark:bg-black sm:p-20">
-      <header className="row-start-1 flex w-full justify-center">
+    <div className="grid min-h-screen grid-rows-[20px_1fr_20pr] items-center justify-items-center gap-16 p-6 font-[family-name:var(--font-geist-sans)]">
+      <header className="row-start-1 mt-6 flex w-full justify-center">
         <nav>
           <ModeToggle />
         </nav>
       </header>
       <main className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
-        <h1 className="h1 text-center text-2xl font-bold sm:text-4xl">
-          Building Your Starter App with Next.js
+        <h1 className="h1 text-center">
+          Building Your Starter App with Next.js 🛠️
         </h1>
-        <p className="p mb-2">
+        <p className="p mb-2 text-center">
           Follow these steps to create and set up your new Next.js starter app,
           complete with essential tools for a smooth development experience.
         </p>
@@ -23,7 +23,7 @@ export default function CreationPage() {
             {steps.map(({ title, command, description }, index) => (
               <div
                 key={index}
-                className="cursor-pointer overflow-hidden rounded-xl border border-border bg-background p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-muted hover:shadow-lg"
+                className="cursor-pointer overflow-hidden rounded-xl border border-border bg-card p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-accent hover:shadow-lg"
               >
                 <h4 className="h4 mb-2 line-clamp-2">{title}</h4>
                 <code className="code mb-2">{command}</code>
@@ -33,14 +33,14 @@ export default function CreationPage() {
           </div>
         </section>
 
-        <section>
+        <section className="w-full">
           <h2 className="h2 mb-6 text-center">Configuration Files</h2>
 
-          <div className="flex w-full flex-1 flex-wrap gap-6">
+          <div className="flex flex-col gap-6">
             {configurations.map(({ title, code }, index) => (
               <div
                 key={index}
-                className="w-full min-w-[300px] flex-1 cursor-pointer overflow-hidden rounded-xl border border-border bg-background p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-muted hover:shadow-lg"
+                className="w-full min-w-[250px] flex-1 cursor-pointer overflow-hidden rounded-xl border border-border bg-card p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-accent hover:shadow-lg"
               >
                 <h4 className="h4 mb-2 line-clamp-2 text-lg font-semibold">
                   {title}
@@ -53,7 +53,7 @@ export default function CreationPage() {
           </div>
         </section>
       </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center p-4">
+      <footer className="row-start-3 flex w-full flex-wrap items-center justify-center p-4">
         <p className="p text-center">
           &copy; {new Date().getFullYear()} Berlin Bruno. All rights reserved.
         </p>

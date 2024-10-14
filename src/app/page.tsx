@@ -1,20 +1,20 @@
+import CodeToClipboard from '@/components/ui/code-to-clipboard';
 import ModeToggle from '@/components/ui/mode-toggle';
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr] items-center justify-items-center gap-16 bg-slate-200 p-8 font-[family-name:var(--font-geist-sans)] dark:bg-black sm:p-20">
-      <header className="row-start-1 flex w-full justify-center">
+    <div className="grid min-h-screen grid-rows-[20px_1fr_20pr] items-center justify-items-center gap-16 p-6 font-[family-name:var(--font-geist-sans)]">
+      <header className="row-start-1 mt-6 flex w-full justify-center">
         <nav>
           <ModeToggle />
         </nav>
       </header>
       <main className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
-        <h1 className="h1 text-center text-2xl font-bold sm:text-4xl">
-          Next.js Starter Template
-        </h1>
-        <div className="overflow-hidden rounded-full border border-border">
+        <h1 className="h1 text-center">Next.js Starter Template ⚡</h1>
+        {/* <div className="overflow-hidden rounded-full border border-border">
           <code className="code">npx @berlinbruno/nextjs-starter</code>
-        </div>
+        </div> */}
+        <CodeToClipboard />
         <ol className="list-inside list-decimal space-y-2 text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
           <li>
             Get started by editing
@@ -47,9 +47,9 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <section className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+        <section className="flex w-full flex-1 flex-row flex-wrap items-center justify-center gap-4">
           <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-purple-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-purple-700 dark:bg-purple-800 dark:hover:bg-purple-900 sm:h-12 sm:px-5 sm:text-base"
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-purple-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-purple-700 dark:bg-purple-800 dark:hover:bg-purple-900 sm:h-12 sm:px-5 sm:text-base"
             href="/creation"
             target="_self"
             rel="noopener noreferrer"
@@ -58,7 +58,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-blue-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 sm:h-12 sm:px-5 sm:text-base"
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-blue-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 sm:h-12 sm:px-5 sm:text-base"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,7 +67,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-green-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-800 dark:hover:bg-green-900 sm:h-12 sm:px-5 sm:text-base"
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-green-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-800 dark:hover:bg-green-900 sm:h-12 sm:px-5 sm:text-base"
             href="https://app.netlify.com/start"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-yellow-600 px-4 text-sm text-white transition-colors duration-300 hover:bg-yellow-700 dark:bg-yellow-800 dark:hover:bg-yellow-900 sm:h-12 sm:px-5 sm:text-base"
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-yellow-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-yellow-700 dark:bg-yellow-800 dark:hover:bg-yellow-900 sm:h-12 sm:px-5 sm:text-base"
             href="/usage"
             target="_self"
             rel="noopener noreferrer"
@@ -90,62 +90,62 @@ export default function Home() {
             {
               title: 'Next.js',
               description:
-                'A powerful React framework for building server-rendered and statically generated applications.',
+                '⚛️ A powerful React framework for building server-rendered and statically generated applications.',
             },
             {
               title: 'TypeScript',
               description:
-                'A superset of JavaScript that adds static typing to the language, enhancing code quality and developer experience.',
+                '📘 A superset of JavaScript that adds static typing to the language, enhancing code quality and developer experience.',
             },
             {
               title: 'ESLint',
               description:
-                'A linting utility for JavaScript and TypeScript, helping you find and fix problems in your code.',
+                '🔍 A linting utility for JavaScript and TypeScript, helping you find and fix problems in your code.',
             },
             {
               title: 'Prettier',
               description:
-                'An opinionated code formatter that enforces a consistent style across your codebase.',
+                '🎨 An opinionated code formatter that enforces a consistent style across your codebase.',
             },
             {
               title: 'Tailwind CSS',
               description:
-                'A utility-first CSS framework that provides low-level utility classes for rapid UI development.',
+                '💨 A utility-first CSS framework that provides low-level utility classes for rapid UI development.',
             },
             {
               title: 'Next Theme',
               description:
-                'A theme management library for Next.js that enables easy toggling between light and dark themes.',
+                '🎛️ A theme management library for Next.js that enables easy toggling between light and dark themes.',
             },
             {
               title: 'PWA',
               description:
-                'Progressive Web Apps enhance web applications with offline capabilities and native-like features.',
+                '📱 Progressive Web Apps enhance web applications with offline capabilities and native-like features.',
             },
             {
               title: 'Husky',
               description:
-                'A Git hooks manager that helps enforce quality checks before commits and pushes.',
+                '🐶 A Git hooks manager that helps enforce quality checks before commits and pushes.',
             },
             {
               title: 'Continuous Integration',
               description:
-                'Automated process that ensures code quality through linting, formatting, and commit message validation on all branches and PRs.',
+                '⚙️ An automated process that ensures code quality through linting, formatting, and commit message validation on all branches and PRs.',
             },
             {
               title: 'SEO',
               description:
-                'Search Engine Optimization techniques that improve the visibility of your web application in search results.',
+                '🔍 Search Engine Optimization techniques that improve the visibility of your web application in search results.',
             },
             {
               title: 'Commentlint',
               description:
-                'A tool that helps enforce consistent formatting for comments in your codebase.',
+                '📝 A tool that helps enforce consistent formatting for comments in your codebase.',
             },
             {
               title: 'CitizenComment',
               description:
-                'A commenting system designed for engaging users in discussions and feedback on your platform.',
+                '💬 A commenting system designed for engaging users in discussions and feedback on your platform.',
             },
           ].map((card) => (
             <Card
@@ -167,7 +167,7 @@ export default function Home() {
 
 function Card({ title, description }: { title: string; description: string }) {
   return (
-    <div className="cursor-pointer overflow-hidden rounded-xl border border-border bg-background p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-muted hover:shadow-lg">
+    <div className="cursor-pointer overflow-hidden rounded-xl border border-border bg-card p-4 shadow-md transition-shadow duration-300 ease-in-out hover:bg-accent hover:shadow-lg">
       <h4 className="h4 line-clamp-1">{title}</h4>
       <p className="p line-clamp-3">{description}</p>
     </div>
