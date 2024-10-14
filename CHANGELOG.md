@@ -1,5 +1,19 @@
 
 
+## [1.5.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.4.0...v1.5.0) (2024-10-14)
+
+### Features
+
+* add chart color palette ([096f10f](https://github.com/berlinbruno/nextjs-starter/commit/096f10f22d5b6a1056014769995bb9683346d37f))
+* add footer and navigation to home page ([a8846ee](https://github.com/berlinbruno/nextjs-starter/commit/a8846ee1ac8006643455cc560c17518b4026373c))
+* add Tailwind CSS linting ([c1a4fd3](https://github.com/berlinbruno/nextjs-starter/commit/c1a4fd3de61c91bda0797e70f96298a77743c032))
+* implement dark mode ([2f5a26c](https://github.com/berlinbruno/nextjs-starter/commit/2f5a26ca27240ca12a12aab5ed6e5536889c66a7))
+* improve template structure and usability ([af3f82c](https://github.com/berlinbruno/nextjs-starter/commit/af3f82c9576eab65ee766c81f72a3700f6bede9c))
+
+### Miscellaneous
+
+* update prettier config and home page ([4d62e70](https://github.com/berlinbruno/nextjs-starter/commit/4d62e709e73df37ccea9a8fbb27be7124683857a))
+
 ## [1.4.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.3.0...v1.4.0) (2024-10-13)
 
 ### Features
