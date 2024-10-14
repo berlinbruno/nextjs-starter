@@ -1,5 +1,13 @@
 
 
+## [1.6.1](https://github.com/berlinbruno/nextjs-starter/compare/v1.6.0...v1.6.1) (2024-10-14)
+
+### Miscellaneous
+
+* enhance project description ([ea7f4cf](https://github.com/berlinbruno/nextjs-starter/commit/ea7f4cf6bdf130baba7154adfc3ba76edfae8c0a))
+* remove unnecessary push trigger ([36cd491](https://github.com/berlinbruno/nextjs-starter/commit/36cd491bfd20e0d27d04cccc5d172763b6d7f5a1))
+* update README.md ([4bd29a2](https://github.com/berlinbruno/nextjs-starter/commit/4bd29a2cbef84dc6aa21cd7f4731615184804b34))
+
 ## [1.6.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.5.0...v1.6.0) (2024-10-14)
 
 ### Features
