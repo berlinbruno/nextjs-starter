@@ -1,5 +1,12 @@
 
 
+## [1.6.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.5.0...v1.6.0) (2024-10-14)
+
+### Features
+
+* add basic SEO meta tags ([6824f00](https://github.com/berlinbruno/nextjs-starter/commit/6824f00ba2130f97282fbce490064cb6f77d19df))
+* improve user experience and add new features ([f48363b](https://github.com/berlinbruno/nextjs-starter/commit/f48363bdc3caa93a4bc7a0ed5fa8bc03aa7a70ad))
+
 ## [1.5.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.4.0...v1.5.0) (2024-10-14)
 
 ### Features
