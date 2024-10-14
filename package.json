@@ -1,6 +1,6 @@
 {
   "name": "@berlinbruno/nextjs-starter",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "private": false,
   "description": "Next.js starter template featuring React, TypeScript, and PWA capabilities. Includes Tailwind CSS for styling, Husky for Git hooks, Prettier and ESLint for code formatting, and Commentlint for consistent comments. Supports continuous integration, customizable themes, and built-in SEO features for optimized web visibility.",
   "author": "berlinbruno",
