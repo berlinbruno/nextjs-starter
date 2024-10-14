@@ -1,8 +1,9 @@
+import ModeToggle from '@/components/ui/mode-toggle';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
+    <div className="dark:bg-black·sm:p-20 grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 bg-slate-200 p-8 pb-20 font-[family-name:var(--font-geist-sans)]">
       <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
         <Image
           className="dark:invert"
@@ -20,12 +21,30 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li className="mb-2">
+            Rename the &apos;name&apos;, &apos;author&apos;, and
+            &apos;description&apos; fields in package.json.
+          </li>
+          <li className="mb-2">
+            Update the site metadata in &apos;constants/data.ts&apos; for your
+            app.
+          </li>
+          <li className="mb-2">
+            Create environment variables for dev (port: 3000) and prod (port:
+            4000) with <br></br>NEXT_PUBLIC_BASE_URL&apos; for your app.
+          </li>
+          <li>Update the name in the LICENSE file.</li>
+          <li className="mb-2">
+            Clean up the &apos;README.md&apos; file to provide relevant
+            information about your project.
+          </li>
+          <li className="mb-2">Explore the project.</li>
+          <li className="mb-2">Save and see your changes instantly.</li>
         </ol>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838] sm:h-12 sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
+            className="ark:hover:bg-[#ccc]·sm:h-12·sm:px-5·sm:text-base flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838]"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,13 +59,14 @@ export default function Home() {
             Deploy now
           </a>
           <a
-            className="flex h-10 items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:min-w-44 sm:px-5 sm:text-base dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
+            className="dark:border-white/[.145]·dark:hover:bg-[#1a1a1a]·sm:h-12·sm:min-w-44·sm:px-5·sm:text-base flex h-10 items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm transition-colors hover:border-transparent hover:bg-[#f2f2f2]"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
             Read our docs
           </a>
+          <ModeToggle />
         </div>
       </main>
       <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
