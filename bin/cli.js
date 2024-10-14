@@ -54,7 +54,9 @@ const fieldsToRemove = [
 
 function runCommand(command) {
   try {
-    execSync(command, { stdio: 'inherit' });
+    execSync(command, {
+      stdio: 'inherit',
+    });
     return true;
   } catch (error) {
     console.error(`🛑 Error executing command: ${command}`, error);
@@ -89,7 +91,7 @@ fieldsToRemove.forEach((field) => {
 });
 
 console.log('\nCleaning up unnecessary files... 🔥');
-const cleaningFilesCommand = `npx rimraf ${repoName}/bin ${repoName}/.github/workflows/publish.yml ${repoName}/src/app/creation ${repoName}/src/app/usage ${repoName}/.release-it.json ${repoName}/CHANGELOG.md ${repoName}/.git ${repoName}/LICENSE`;
+const cleaningFilesCommand = `npx rimraf ${repoName}/bin ${repoName}/.github/workflows/publish.yml ${repoName}/.release-it.json ${repoName}/CHANGELOG.md ${repoName}/.git ${repoName}/LICENSE`;
 
 console.log(`\nExecuting cleanup command...`);
 if (!runCommand(cleaningFilesCommand)) {
