@@ -2,13 +2,13 @@ import ModeToggle from '@/components/ui/mode-toggle';
 
 export default function CreationPage() {
   return (
-    <main className="grid min-h-screen grid-rows-[20px_1fr] items-center justify-items-center gap-16 bg-slate-200 p-8 pb-5 font-[family-name:var(--font-geist-sans)] dark:bg-black sm:p-20">
-      <div className="row-start-1 flex w-full justify-center">
+    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 bg-slate-200 p-8 font-[family-name:var(--font-geist-sans)] dark:bg-black sm:p-20">
+      <header className="row-start-1 flex w-full justify-center">
         <nav>
           <ModeToggle />
         </nav>
-      </div>
-      <div className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
+      </header>
+      <main className="row-start-2 mx-auto flex max-w-[1080px] flex-col items-center gap-8 sm:items-start">
         <h1 className="h1 text-center text-2xl font-bold sm:text-4xl">
           Building Your Starter App with Next.js
         </h1>
@@ -52,8 +52,13 @@ export default function CreationPage() {
             ))}
           </div>
         </section>
-      </div>
-    </main>
+      </main>
+      <footer className="row-start-3 flex flex-wrap items-center justify-center p-4">
+        <p className="p text-center">
+          &copy; {new Date().getFullYear()} Berlin Bruno. All rights reserved.
+        </p>
+      </footer>
+    </div>
   );
 }
 

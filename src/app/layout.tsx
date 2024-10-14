@@ -126,12 +126,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <footer className="flex flex-wrap items-center justify-center p-4">
-            <p className="p text-center">
-              &copy; {new Date().getFullYear()} Berlin Bruno. All rights
-              reserved.
-            </p>
-          </footer>
         </ThemeProvider>
       </body>
     </html>
