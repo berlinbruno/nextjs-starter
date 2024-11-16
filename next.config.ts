@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+import { NextConfig } from 'next';
 
 const withPWA = require('@ducanh2912/next-pwa').default({
   dest: 'public',
@@ -15,8 +16,18 @@ const withPWA = require('@ducanh2912/next-pwa').default({
   },
 });
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: true,
+  experimental: {
+    turbo: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js',
+        },
+      },
+    },
+  },
 };
 
 module.exports = withPWA(nextConfig);

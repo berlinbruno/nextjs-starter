@@ -46,15 +46,6 @@ export default function Home() {
 
         <section className="flex w-full flex-1 flex-row flex-wrap items-center justify-center gap-4">
           <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-purple-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-purple-700 dark:bg-purple-800 dark:hover:bg-purple-900 sm:h-12 sm:px-5 sm:text-base"
-            href="/creation"
-            target="_self"
-            rel="noopener noreferrer"
-          >
-            🛠️ How the Template was Created
-          </a>
-
-          <a
             className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-blue-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 sm:h-12 sm:px-5 sm:text-base"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
@@ -62,16 +53,6 @@ export default function Home() {
           >
             🚀 Deploy now to Vercel
           </a>
-
-          <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-green-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-800 dark:hover:bg-green-900 sm:h-12 sm:px-5 sm:text-base"
-            href="https://app.netlify.com/start"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            🌐 Deploy now to Netlify
-          </a>
-
           <a
             className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-yellow-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-yellow-700 dark:bg-yellow-800 dark:hover:bg-yellow-900 sm:h-12 sm:px-5 sm:text-base"
             href="/usage"
@@ -79,6 +60,14 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             📚 How to Use the Template
+          </a>
+          <a
+            className="flex h-10 items-center justify-center gap-2 rounded-full border border-transparent bg-green-600 px-4 text-center text-sm text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-800 dark:hover:bg-green-900 sm:h-12 sm:px-5 sm:text-base"
+            href="https://app.netlify.com/start"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🌐 Deploy now to Netlify
           </a>
         </section>
 

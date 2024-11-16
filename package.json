@@ -20,7 +20,7 @@
     "starter template"
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start -p 4000",
     "preview": "next build && next start -p 4000",
@@ -47,21 +47,21 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
-    "next": "14.2.15",
+    "next": "15.0.3",
     "next-themes": "^0.3.0",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.15",
+    "eslint-config-next": "15.0.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-tailwindcss": "^3.17.5",
@@ -85,5 +85,9 @@
   "bugs": {
     "url": "https://github.com/berlinbruno/nextjs-starter/issues"
   },
-  "homepage": "https://nextjs-starter.berlinbruno.dev"
+  "homepage": "https://nextjs-starter.berlinbruno.dev",
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+  }
 }
