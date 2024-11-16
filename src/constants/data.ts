@@ -20,7 +20,7 @@ const siteData = {
       ? 'http://localhost:3000'
       : 'http://localhost:4000'),
   LANG: 'en-US',
-  DEFAULT_THEME: 'system',
+  DEFAULT_THEME: 'dark',
   THEME_COLOR: '#FFFFFF',
   THEME_COLOR_LIGHT: '#FFFFFF',
   THEME_COLOR_DARK: '#FFFFFF',
