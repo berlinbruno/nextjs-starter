@@ -49,8 +49,8 @@
     "@ducanh2912/next-pwa": "^10.2.9",
     "next": "15.0.3",
     "next-themes": "^0.3.0",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
