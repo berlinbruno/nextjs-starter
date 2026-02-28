@@ -5,7 +5,9 @@ export default function CodeToClipboard() {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText('npx @berlinbruno/nextjs-starter my-app');
+    void navigator.clipboard.writeText(
+      'npx @berlinbruno/nextjs-starter my-app'
+    );
     setCopied(true);
 
     setTimeout(() => {
@@ -14,11 +16,8 @@ export default function CodeToClipboard() {
   };
 
   return (
-    <div className="relative rounded-full border border-border">
-      <code
-        className="code flex cursor-pointer items-center gap-2"
-        onClick={copyToClipboard}
-      >
+    <div className="border-border relative rounded-full border">
+      <code onClick={copyToClipboard}>
         npx @berlinbruno/nextjs-starter
         <span role="img" aria-label="copy icon">
           📋

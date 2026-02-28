@@ -1,9 +1,9 @@
-import { ThemeProvider } from '@/components/providers/theme-provider';
 import siteData from '@/constants/data';
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import React from 'react';
 import './globals.css';
+import { ThemeProvider } from '@/components/providers/theme-provider';
 
 const geistSans = localFont({
   src: '../fonts/GeistVF.woff',
@@ -77,9 +77,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <link
