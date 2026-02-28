@@ -1,4 +1,26 @@
+# Changelog
 
+## [2.0.0](https://github.com/berlinbruno/nextjs-starter/compare/v1.6.2...v2.0.0) (2026-02-28)
+
+### ⚠ BREAKING CHANGES
+
+* - Components relying on client-only rendering need explicit `"use client"` directives.
+- Legacy `getStaticProps` and `getServerSideProps` usage in App Router is no longer supported.
+
+### Features
+
+* update dependencies ([8d4c89f](https://github.com/berlinbruno/nextjs-starter/commit/8d4c89f720802bac1a78770a378240e1a0c44bf9))
+* update dependencies ([bf66106](https://github.com/berlinbruno/nextjs-starter/commit/bf66106abd10f0a85c0349611a7154dad21fdc5d))
+* upgrade Next.js from v14 to v15 ([04f5bbe](https://github.com/berlinbruno/nextjs-starter/commit/04f5bbe58ac67e25bf97ba8fcdf411032581ca5c))
+
+### Miscellaneous
+
+* add @release-it/conventional-changelog to dependencies ([b17eb86](https://github.com/berlinbruno/nextjs-starter/commit/b17eb86f15162c5da6d9df364dad312e91efe0d2))
+* update data.ts ([cee8463](https://github.com/berlinbruno/nextjs-starter/commit/cee84637bf5755f5a131a081b5ffb827d236c2d6))
+
+### Code Refactoring
+
+* update postcss config and global styles ([1b96a77](https://github.com/berlinbruno/nextjs-starter/commit/1b96a77fee9d2f55d34ebeeecd9cc0385d3a44af))
 
 ## [1.6.2](https://github.com/berlinbruno/nextjs-starter/compare/v1.6.1...v1.6.2) (2024-10-14)
 
