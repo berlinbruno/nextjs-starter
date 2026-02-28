@@ -12,13 +12,13 @@ A powerful starter template for building modern web applications using **Next.js
 - **Next.js**: 🌐 Server-side rendering and static site generation capabilities.
 - **React**: ⚛️ Build interactive user interfaces with a component-based approach.
 - **TypeScript**: 🛡️ Strongly typed language for improved developer experience.
-- **Progressive Web App (PWA)**: ⚡ Enhanced performance and offline capabilities.
 - **Tailwind CSS**: 🎨 Utility-first CSS framework for rapid UI development.
+- **shadcn/ui**: 🎭 Beautifully designed components built with Radix UI and Tailwind CSS.
 - **Husky**: 🐶 Git hooks for enforcing quality checks before commits.
 - **Prettier & ESLint**: ✨ Automated code formatting and linting for consistent code quality.
 - **Commentlint**: 💬 Maintain consistent comment styles throughout your codebase.
 - **Continuous Integration**: 🔄 Seamless integration with CI/CD workflows.
-- **Next Themes**: 🎭 Easy theming for customizable user experiences.
+- **Next Themes**: 🌓 Easy theming for customizable user experiences.
 - **SEO Features**: 📈 Built-in support for optimizing web visibility.
 
 ## 🌐 Live Demo
@@ -31,9 +31,9 @@ To create a new Next.js app using this starter template, run the following comma
 
 ```bash
 npx @berlinbruno/nextjs-starter my-app
-
 ```
-## ⚙️ Usage 
+
+## ⚙️ Usage
 
 Customize the template according to your project requirements. Key areas to modify include:
 

@@ -1,9 +1,0 @@
-{
-  "extends": ["eslint:recommended", "next", "next/core-web-vitals", "prettier"],
-  "plugins": ["prettier", "tailwindcss"],
-  "rules": {
-    "prettier/prettier": "error",
-    "tailwindcss/classnames-order": "warn",
-    "tailwindcss/no-custom-classname": "off"
-  }
-}

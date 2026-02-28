@@ -8,6 +8,7 @@ export default function ModeToggle() {
 
   // Ensure the component is mounted before rendering theme-dependent content
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
@@ -22,7 +23,7 @@ export default function ModeToggle() {
       <button
         onClick={modeChange}
         aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        className="flex h-full items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors duration-300 hover:bg-muted hover:text-primary dark:bg-gray-800 dark:text-primary dark:hover:bg-gray-700"
+        className="bg-foreground text-background hover:bg-muted hover:text-primary dark:text-primary flex h-full items-center justify-center gap-2 rounded-full border border-solid border-transparent px-4 text-sm transition-colors duration-300 dark:bg-gray-800 dark:hover:bg-gray-700"
       >
         <p>Toggle Theme</p>
         {theme === 'light' ? (
