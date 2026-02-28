@@ -62,6 +62,7 @@
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "@next/eslint-plugin-next": "^16.1.6",
+    "@release-it/conventional-changelog": "^10.0.5",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^25",
     "commitizen": "^4.2.4",
